@@ -1,0 +1,481 @@
+/*------------------------CABECALHO------------------- */
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap);
+*{  color: #ffffff;
+    padding: 0;
+    margin: 0;
+    font-family:Poppins;
+    background-color: #111317;
+}
+.cabecalho {    
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 15%;
+    margin-left: 15%;
+    padding: 10px;
+    display: flex;
+}
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+}
+.header-lista {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+.header-opcoes {
+    margin: 0 30px;
+}
+.header-link {
+    text-decoration: none;
+    position: relative;
+}
+.header-link:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 3px;
+    width: 50%;
+    background-color: #f9ac54;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+.header-link:hover::after {
+    transform: scaleX(1);
+}
+.header-botao {
+    background-color:#f9ac54; 
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.header-botao:hover {
+    background-color: #d79447;;
+}
+
+/*-----------------------CONTEUDO 1------------------- */
+
+.conteudo1{
+    margin-top: 50px;
+    margin-right: 15%;
+    margin-left: 15%;
+    display: flex;
+    padding: 20px;
+}
+.conteudo {
+    margin-top: 85px;
+    height:50%;
+    width: 50%;
+}
+.conteudo h5{
+    color:#f9ac54;
+}
+.make{
+    display: flex;
+    gap: 20px;
+}
+#make1{
+    font-size: 72px;
+    color: transparent;
+    -webkit-text-stroke: 1px #ffffff;
+}
+.conteudo p{
+    font-size: 13px;
+}
+.atleta {
+    width: 35%;
+    margin-left: auto;
+}
+.atleta img{
+    width: 300px;
+}
+
+/*-----------------------CONTEUDO 2------------------- */
+
+.conteudo2{
+    margin-top: 8%;
+    margin-right: 15%;
+    margin-left: 15%;
+    display: flex;
+    padding: 20px;
+}
+.seta-explore {
+    display: flex;
+    margin-left: auto;
+    background-color: transparent;
+}
+.botao-seta {
+    margin-left: auto;
+    background-color: transparent;
+    border: none;
+    color: #d79447;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 0 20px;
+    transition: color 0.3s;
+}
+.botao-seta:hover {
+    color: #ffffff;
+}
+
+/*-----------------------CONTEUDO 3------------------- */
+
+.conteudo3{
+    justify-content: space-around;
+    margin-right: 15%;
+    margin-top: 10px;
+    margin-left: 15%;
+    display: flex;
+    padding: 20px;
+}
+.caixa{
+    padding: 15px;
+    width: 250px;
+    height: 300px;
+    background-color: #35373b;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: border-color 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+.caixa h3{
+    background-color: transparent;
+}
+.caixa p{
+    background-color: transparent;
+}
+.caixa a {
+    margin-top: auto;
+    background-color: transparent;
+}
+#link-explore{
+    background-color: transparent;
+    text-decoration: none;
+    margin-top: auto;
+}
+#link-explore:hover {
+    color: #d79447;
+}
+
+.caixa:hover {
+    border-color: #d79447;
+}
+#explore-icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    background-color: #d79447;
+}
+
+/*-----------------------CONTEUDO 4------------------- */
+
+.conteudo4{
+    justify-content: space-around;
+    margin-right: 20%;
+    margin-top: 100px;
+    margin-left: 20%;
+    display: flex;
+    padding: 20px;
+}
+.imagens-atletas{
+    position: relative;
+    margin-right: auto;
+    width: 300px;
+    height: 200px;
+    overflow: visible;
+}
+.atleta1 img{
+    width: 425px;
+    border-radius: 10px;
+}
+.atleta2 img{
+    position: absolute;
+    border-radius: 10px;
+    right: 150px;
+    width: 200px;
+    top: 100%;
+}
+.conteudo-imagens{
+    margin-left: 15%;
+    margin-top: 30px;
+}
+.conteudo-imagens p{
+    font-size: 14px;
+}
+
+/*-----------------------CONTEUDO 5------------------- */
+
+.conteudo5{
+    margin-top: 8%;
+    margin-right: 12%;
+    margin-left: 12%;
+    padding: 20px;
+}
+.conteudo-bike{
+    text-align: center;
+    position: relative;
+}
+.conteudo-bike p{
+    font-size: 14px;
+}
+.bike img{
+    width: 70%;
+    border-radius: 10px;
+}
+.tabela {
+    display: flex;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    width: 60%;
+    height: 130px;
+    padding-left: 10px;
+    background-color: #1f2125;
+    align-items: center;
+    justify-content: center;
+}
+.tabela-bike{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    background-color: transparent;
+}
+.primeira1{
+    background-color: transparent;
+    bottom: 10px;
+    width: 250px;
+    height: 110px;
+}
+.icon1{
+    background-color: transparent;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+}
+.icon1 img{
+    margin-top: 20px;
+    background-color: #d79447;
+    border-radius: 10px;
+}
+.primeira1 h3{
+    background-color: transparent;
+    margin-left: 50px;
+}
+.primeira1 p{
+    background-color: transparent;
+    margin-left: 50px;
+    font-size: 12px;
+}
+
+/*-----------------------CONTEUDO 6------------------- */
+
+.conteudo6{
+    margin-top: 5%;
+    margin-right: 15%;
+    margin-left: 15%;
+    padding: 20px;
+}
+.preco{
+    text-align: center;
+}
+.tabela-preco{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+.plano{
+    padding: 30px;
+    width: 250px;
+    height: 400px;
+    background-color: #35373b;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+.plano h5{
+    background-color: transparent;
+}
+.plano h1{
+    background-color: transparent;
+}
+.plano hr{
+    margin-top: 15px;
+}
+.plano:hover {
+    border-color: #d79447;
+}
+.lista-beneficio{
+    gap: 10px;
+    margin-top: 15px;
+    background-color: transparent;
+    display: flex;
+}
+.lista-beneficio img{
+    background-color: transparent;
+}
+.lista-beneficio p{
+    background-color: transparent;
+}
+.btn1 {
+    background-color: transparent;
+    border: 2px solid #f9ac54;
+    color: #f9ac54;
+    margin-top: auto;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.btn1:hover {
+    background-color: #f9ac54;
+    color: #ffffff;
+}
+
+/*-----------------------CONTEUDO 7------------------- */
+
+.conteudo7{
+    background-color: #35373b;
+    padding-top: 20px;
+    height: auto;
+    width: auto;
+}
+.area-comentario{
+    padding: 2%;
+    display: flex;
+    margin-left: 18%;
+    margin-right: 18%;
+    background-color: transparent;
+}
+.icon-comentario{
+    padding: 50px;
+    background-color: transparent;
+}
+.icon-comentario img{
+    background-color: transparent;
+}
+.comentario{
+    background-color: transparent;
+    margin-right: auto;
+}
+.comentario h1{
+    margin-right: auto;
+    background-color: transparent;
+}
+.comentario p{
+    background-color: transparent;
+    font-size: 13px;
+}
+.avaliacao{
+    display: flex;
+    margin-right: auto;
+    background-color: transparent;
+    
+}
+.star-icon{
+    background-color: transparent;
+    list-style-type: none;
+    cursor: pointer;
+    color: #ffe500;
+    font-size: 30px;
+}
+.star-icon::before{
+    content: "\2605";
+}
+.star-icon.ativo ~ .star-icon::before{
+    content: "\2606";
+}
+.avaliacao:hover .star-icon::before{
+    content: "\2605";
+}
+.star-icon:hover ~ .star-icon::before{
+    content: "\2606";
+}
+.usuario{
+    display: flex;
+    background-color: transparent;
+}
+.usuario-info-seta{
+    flex: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+}
+.membro{
+    background-color: #ffe500;
+    background-color: transparent;
+    margin-right: auto;
+}
+.membro img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+}
+.dados-usuario{
+    background-color: transparent;
+    margin-right: 60%;
+}
+.dados-usuario blockquote{
+    background-color: transparent;
+}
+.dados-usuario p{
+    background-color: transparent;
+}
+.seta-comentario {
+    display: flex;
+    margin-right: auto;
+    background-color: transparent;
+}
+
+/*-----------------------RODAPE------------------- */
+
+.fim-rodape{
+    justify-content: space-around;
+    margin-right: 15%;
+    margin-top: 5%;
+    margin-left: 15%;
+    display: flex;
+    padding: 20px;
+}
+.rodape{
+    padding: 15px;
+    width: 250px;
+    height: 200px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: border-color 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+.rodape p{
+    font-size: 13px;
+}
+.icon-redeSociais{
+    gap: 5px;
+    display: flex;
+}
+.rodape-lista {
+    list-style-type: none; /* Remove os marcadores padrão */
+}
+
+.rodape-link {
+    margin: 10px;
+}
+
+.rodape-link a {
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.rodape-link a:hover {
+    color: #f9ac54;
+}
